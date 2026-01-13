@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome</title>
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(135deg, #43cea2, #185a9d);
+    }
+
+    .card {
+        background: white;
+        padding: 40px;
+        border-radius: 12px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        text-align: center;
+    }
+
+    h2 {
+        color: #333;
+        font-size: 26px;
+    }
+
+    span {
+        color: #185a9d;
+        font-weight: bold;
+    }
+</style>
+</head>
+
+<body>
+    <div class="card">
+        <h2>Welcome, <span th:text="${name}">User</span> 🎉</h2>
+        <p>Your Spring Boot + Thymeleaf UI is now beautiful!</p>
+    </div>
+</body>
+</html>
